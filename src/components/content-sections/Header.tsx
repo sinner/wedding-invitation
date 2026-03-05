@@ -20,7 +20,7 @@ function CoupleNames() {
             className="w-24"
             style={{
               transformOrigin: "left bottom",
-              transform: "translateX(-0.610869px) rotate(-0.610869deg)",
+              animation: "flower-sway 4s ease-in-out infinite",
             }}
           />
         </div>
@@ -31,7 +31,7 @@ function CoupleNames() {
             className="w-40"
             style={{
               transformOrigin: "right top",
-              transform: "translateX(-0.610869px) rotate(-0.610869deg)",
+              animation: "flower-sway 4s ease-in-out 2s infinite",
             }}
           />
         </div>
@@ -49,8 +49,7 @@ function WeddingDate() {
         key={index}
         className="inline-block whitespace-pre [transform-style:preserve-3d]"
         style={{
-          transform:
-            "translateX(1.98405px) translateY(-1.98405px) translateZ(0.992024px) scale(1.0496) rotateY(1.98405deg)",
+          animation: `date-wave 7s ease-in-out ${index * 0.12}s infinite`,
         }}
       >
         {char}
