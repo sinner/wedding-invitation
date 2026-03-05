@@ -1,6 +1,6 @@
 import "./App.scss";
 import Background from "@/components/Background";
-import PageSection from "@/components/PageSection";
+import Page from "@/components/Page";
 import { GlobalSettingsProvider } from "@/context/GlobalSettingsContext";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <GlobalSettingsProvider>
         <main className="w-screen h-screen">
           <Background />
-          <PageSection />
+          <Page />
         </main>
       </GlobalSettingsProvider>
     </>

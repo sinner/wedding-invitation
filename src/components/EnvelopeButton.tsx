@@ -1,24 +1,27 @@
 import { useState, useEffect } from "react";
 import images from "@/assets/images";
 import { useGlobalSettings } from "@/hooks/useGlobalSettings";
+import ENV from "@/constants/env";
 
 interface EnvelopeButtonProps {
-  onOpenFinished: () => void;
+  onEnvelopeOpening?: () => void;
+  onOpenFinished?: () => void;
 }
 
-export default function EnvelopeButton({ onOpenFinished }: EnvelopeButtonProps) {
+export default function EnvelopeButton({ onEnvelopeOpening, onOpenFinished }: EnvelopeButtonProps) {
   const { envelopeOpen, toggleEnvelopeOpen } = useGlobalSettings();
   const [openAnimationFinished, setOpenAnimationFinished] = useState(false);
 
   useEffect(() => {
     if (envelopeOpen) {
+      if (onEnvelopeOpening) onEnvelopeOpening();
       const timer = setTimeout(() => {
         setOpenAnimationFinished(true);
         if (onOpenFinished) onOpenFinished();
       }, 1600); // 1.6 seconds for animation
       return () => clearTimeout(timer);
     }
-  }, [envelopeOpen, onOpenFinished]);
+  }, [envelopeOpen, onEnvelopeOpening, onOpenFinished]);
 
   if (openAnimationFinished) return null;
 
@@ -51,10 +54,10 @@ export default function EnvelopeButton({ onOpenFinished }: EnvelopeButtonProps) 
             envelopeOpen ? "-translate-y-[200vh]" : "-translate-y-1/2"
           }`}
         >
-          <div className="absolute bottom-0 left-0 right-0 top-0 text-[#80a594] title z-30 flex h-full w-full translate-x-1/4 translate-y-1/4 -rotate-45 flex-col items-center justify-start pt-16 opacity-100 animate-pulse">
-            <p className="title-font text-7xl">Neida</p>
+          <div className="absolute bottom-0 left-0 right-0 top-0 text-[#80a594] title z-30 flex h-full w-full translate-x-1/4 translate-y-1/4 -rotate-45 flex-col items-center justify-start pt-16 opacity-100 animate-smoothpulse">
+            <p className="title-font text-7xl">{ENV.COUPLE_FRST_NAME}</p>
             <p className="parisienne-text text-4xl">&amp;</p>
-            <p className="title-font text-7xl">Víctor</p>
+            <p className="title-font text-7xl">{ENV.COUPLE_SCND_NAME}</p>
           </div>
           <div className="stamp-section relative z-30 translate-x-1/4 translate-y-1/4 -rotate-45 hover:rotate-315 transition-all duration-300 group-active:scale-95">
             <img alt="stamp" src={images.stamp} className="block w-28 object-cover opacity-100" />

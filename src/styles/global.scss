@@ -1,10 +1,15 @@
 @use "./reset.scss";
 @use "./fonts.scss";
 
-body, :root, html, * {
+@theme {
+  --base-color: #71717a;
+}
+
+body, :root, html {
   font-family:
     serif, "Times New Roman", Times, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
+  color: var(--base-color);
 }
 
 .embla-carousel_embla {

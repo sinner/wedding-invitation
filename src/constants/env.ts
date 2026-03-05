@@ -1,0 +1,8 @@
+export default {
+  COUPLE_FRST_NAME: import.meta.env.VITE_COUPLE_FRST_NAME,
+  COUPLE_SCND_NAME: import.meta.env.VITE_COUPLE_SCND_NAME,
+  WEDDING_ISO_DATE: import.meta.env.VITE_WEDDING_ISO_DATE,
+  WEDDING_DATE_DAY: import.meta.env.VITE_WEDDING_DATE_DAY,
+  WEDDING_DATE_MONTH: import.meta.env.VITE_WEDDING_DATE_MONTH,
+  WEDDING_DATE_YEAR: import.meta.env.VITE_WEDDING_DATE_YEAR,
+};

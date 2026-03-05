@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@theme {
+  --animate-smoothpulse: smoothpulse 1s ease-in-out infinite;
+  @keyframes smoothpulse {
+    0%,
+    100% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+}
