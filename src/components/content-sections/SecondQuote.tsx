@@ -31,15 +31,25 @@ export default function SecondQuote() {
           initial={{
             opacity: 0,
             rotate: "-118deg",
-            scale: 0.5,
+            scale: 0,
             translateX: -15,
           }}
           animate={{
             filter: "none",
             opacity: 1,
-            transform: "scale(1.2) rotate(-135deg)",
+            scale: 1.2,
+            rotate: "-135deg",
+            translateX: 0,
           }}
-          transition={{ duration: 1.5, ease: "easeOut" }}
+          whileInView={{
+            filter: "none",
+            opacity: 1,
+            rotate: "-135deg",
+            scale: 1.2,
+            transition: { delay: 1.5, duration: 2 },
+            translateX: 0,
+          }}
+          viewport={{ amount: 0.8, once: true }}
         >
           <img
             className="animate-wind"
@@ -52,15 +62,23 @@ export default function SecondQuote() {
           initial={{
             opacity: 0,
             rotate: "8deg",
-            scale: 0.5,
+            scale: 0,
             translateX: -25,
           }}
           animate={{
             filter: "none",
             opacity: 1,
-            transform: "scale(1.2) rotate(18deg)",
+            scale: 1.2,
+            rotate: "18deg",
+            translateX: 0,
           }}
-          transition={{ duration: 1.5, ease: "easeOut" }}
+          whileInView={{
+            rotate: "18deg",
+            scale: 1.2,
+            transition: { delay: 0.25, duration: 2 },
+            translateX: 0,
+          }}
+          viewport={{ amount: 0.8, once: true }}
         >
           <img
             className="animate-wind"
