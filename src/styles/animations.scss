@@ -61,6 +61,22 @@
   animation: wind 5s ease-in-out infinite;
 }
 
+@keyframes animate-windy {
+  0% {
+    transform: translateY(-2px) rotate(-2deg) translateX(0px);
+  }
+  50% {
+    transform: translateY(2px) rotate(2deg) translateX(2px);
+  }
+  100% {
+    transform: translateY(-2px) rotate(-2deg) translateX(0px);
+  }
+}
+
+.animate-windy {
+  animation: animate-windy 5s ease-in-out infinite;
+}
+
 @keyframes lightbounce {
   0% {
     transform: translateY(0px);
@@ -88,4 +104,36 @@
 
 .animate-lightrotation {
   animation: animate-lightrotation 3s ease-in-out infinite;
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-6px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee-right {
+  animation: marquee-right 2s ease-in-out infinite;
+}
+
+.animate-marquee-left {
+  animation: marquee-left 2s ease-in-out infinite;
 }

@@ -2,11 +2,10 @@ import { motion } from "motion/react";
 
 export default function FirstQuote() {
   return (
-    <section className="not-inverse relative z-20 space-y-4 p-5 pt-0 text-3xl parisienne-text">
+    <div className="not-inverse relative z-20 space-y-4 p-5 pt-0 text-3xl parisienne-text">
       <div className="flex justify-end">
         <motion.div
-          initial={{ rotate: "-60deg", scale: 0.6, translateX: "80%" }}
-          animate={{ rotate: 0, scale: 1, translateX: 0 }}
+          initial={{ rotate: "-60deg", scale: 0.5, translateX: "80%" }}
           whileInView={{ rotate: "-40deg", scale: 1, translateX: "20%" }}
           viewport={{ once: true, amount: "some" }}
           transition={{ duration: 2 }}
@@ -26,6 +25,6 @@ export default function FirstQuote() {
       >
         Todos los días pueden ser el comienzo de algo nuevo
       </motion.div>
-    </section>
+    </div>
   );
 }

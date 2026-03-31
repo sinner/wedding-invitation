@@ -1,7 +1,14 @@
 import AnimatedIcon from "@/components/unit/AnimatedIcon";
+import MapModal from "@/components/composed/MapModal/MapModal";
+import { useState } from "react";
 import { motion } from "motion/react";
+import images from "@/assets/images";
+
+const LOCATION = { lat: 10.37139, lng: -75.56648 };
 
 export default function Place() {
+  const [mapOpen, setMapOpen] = useState(false);
+
   return (
     <div className="relative not-inverse">
       <motion.h2
@@ -18,11 +25,11 @@ export default function Place() {
         whileInView={{ opacity: 1, transition: { delay: 0.3, duration: 1.5 } }}
         viewport={{ amount: 0.8, once: true }}
       >
-        <span>CATEDRAL DE PALMA</span>
+        <span>HOTEL PALMARITO BEACH</span>
       </motion.h3>
       <motion.img
         className="h-auto w-full rounded-3xl object-cover p-4"
-        src="https://res.cloudinary.com/dkflthqdd/image/upload/v1772677603/place1_gmrlhr.jpg"
+        src={images.ceremonyPlace}
         alt="catedral de palma"
         initial={{ opacity: 0, translateY: 30 }}
         whileInView={{ opacity: 1, translateY: 0, transition: { delay: 0.3, duration: 1.5 } }}
@@ -34,7 +41,7 @@ export default function Place() {
         whileInView={{ opacity: 1, transition: { delay: 0.3, duration: 1.5 } }}
         viewport={{ amount: 0.8, once: true }}
       >
-        Plaça de la Seu, Centro
+        Isla de Tierra Bomba
       </motion.p>
       <motion.p
         className="text px-4 tracking-wider"
@@ -42,7 +49,7 @@ export default function Place() {
         whileInView={{ opacity: 1, transition: { delay: 0.3, duration: 1.5 } }}
         viewport={{ amount: 0.8, once: true }}
       >
-        07001 Palma
+        Playa Dorada, Cartagena de Indias
       </motion.p>
       <motion.p
         className="mt-2 px-4 text-[#212121] text font-bold tracking-wider"
@@ -53,18 +60,26 @@ export default function Place() {
         18:00 h
       </motion.p>
       <motion.button
-        className={`mx-auto flex flex-col items-center justify-center gap-3`}
-        onClick={() => {}}
+        className={`mx-auto flex flex-col items-center justify-center gap-3 cursor-pointer`}
+        onClick={() => setMapOpen(true)}
         initial={{ opacity: 0, translateY: 30 }}
         whileInView={{ opacity: 1, translateY: 0, transition: { delay: 0.3, duration: 1.5 } }}
         viewport={{ once: true }}
       >
         <AnimatedIcon
-          src="https://res.cloudinary.com/dkflthqdd/image/upload/v1772677598/map-locator_v0arr0.png"
+          src={images.mapIcon}
           animation="lightbounce"
           helperText="(Pulsa para ver en Maps)"
         />
       </motion.button>
+      <MapModal
+        isOpen={mapOpen}
+        onClose={() => setMapOpen(false)}
+        title="Ceremonia Hotel Palmarito Beach"
+        location={LOCATION}
+        placeName="Hotel Palmarito Beach"
+        description="Isla de Tierra Bomba, Playa Dorada, Cartagena de Indias, Colombia"
+      />
     </div>
   );
 }
