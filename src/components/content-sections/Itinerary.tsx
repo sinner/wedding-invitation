@@ -1,12 +1,12 @@
 import images from "@/assets/images";
 import { motion } from "motion/react";
 
-export default function DressCode() {
+export default function Itinerary() {
   return (
     <>
       <div className="relative overflow-visible relative -top-0.5">
         <motion.img
-          src="https://res.cloudinary.com/dkflthqdd/image/upload/v1772677586/divisor_yhttzy.png"
+          src={images.divisorToDark}
           loading="eager"
           alt="divisor-top"
           className="-scale-y-100"
@@ -48,24 +48,34 @@ export default function DressCode() {
           whileInView={{ opacity: 1, translateY: 0, transition: { delay: 0.3, duration: 1.5 } }}
           viewport={{ once: true }}
         >
-          DressCode
+          Itinerario
         </motion.h2>
         <motion.div
           initial={{ opacity: 0, translateY: 30 }}
           whileInView={{ opacity: 1, translateY: 0, transition: { delay: 0.3, duration: 1.5 } }}
           viewport={{ once: true }}
         >
-          <div className="break-words px-4 pb-2 text-base font-bold tracking-wider text-[#212121] text">
-            FORMAL
-          </div>
-          <div className="text break-words px-4 text-base [&amp;_a]:underline [&amp;_ol]:inline-block [&amp;_ol]:list-decimal [&amp;_ol]:pl-5 [&amp;_ol]:text-start [&amp;_ul]:inline-block [&amp;_ul]:list-disc [&amp;_ul]:pl-5 [&amp;_ul]:text-start">
-            El blanco está reservado para la novia,
-            <br />
-            ¡nos encantará verte en otros colores!
-          </div>
-          <div className="mx-auto flex items-center justify-center gap-0.5 py-4">
-            <img src={images.tie} alt="dc1-1" className="icon h-20 w-20 object-contain " />
-            <img src={images.dress} alt="dc1-2" className="icon h-20 w-20 object-contain " />
+          <div className="relative w-full pb-6">
+            <img className="mx-auto" src={images.canopy} alt="ceremony" width="100" />
+            <div className="mb-6 px-4 mt-3 tracking-wider">
+              <p className="text-[#212121] text text-base font-bold tracking-wider">18:00 h</p>
+              <p>Ceremonia</p>
+            </div>
+            <img className="mx-auto" src={images.cocktail} alt="cocktail" width="100" />
+            <div className="mb-6 px-4 mt-3 tracking-wider">
+              <p className="text-[#212121] text text-base font-bold tracking-wider">19:30 h</p>
+              <p>Cocktail</p>
+            </div>
+            <img className="mx-auto" src={images.food} alt="food" width="100" />
+            <div className="mb-6 px-4 mt-3 tracking-wider">
+              <p className="text-[#212121] text text-base font-bold tracking-wider">20:30 h</p>
+              <p>Banquete</p>
+            </div>
+            <img className="mx-auto" src={images.dance} alt="party" width="100" />
+            <div className="mb-6 px-4 mt-3 tracking-wider">
+              <p className="text-[#212121] text text-base font-bold tracking-wider">23:00 h</p>
+              <p>Fiesta</p>
+            </div>
           </div>
         </motion.div>
       </div>

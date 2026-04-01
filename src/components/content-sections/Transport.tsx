@@ -26,8 +26,8 @@ export default function Transport() {
           viewport={{ amount: 0.8, once: true }}
         >
           <div className="text px-4 text-base">
-            Para facilitar el traslado entre la Iglesia y el restaurante, pondremos a vuestra
-            disposición el siguiente servicio de autobús:
+            Si decides no quedarte a dormir en el Hotel Palmarito Beach, para facilitar el traslado
+            pondremos a vuestra disposición el siguiente servicio de lancha:
           </div>
         </motion.div>
         <motion.div

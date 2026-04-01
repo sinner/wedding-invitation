@@ -9,6 +9,11 @@ import Celebration from "@/components/content-sections/Celebration";
 import DressCode from "@/components/content-sections/DressCode";
 import Transport from "@/components/content-sections/Transport";
 import Lodging from "@/components/content-sections/Lodging";
+import AttendanceConfirmation from "@/components/content-sections/AttendanceConfirmation";
+import Itinerary from "@/components/content-sections/Itinerary";
+import Album from "@/components/content-sections/Album";
+import Gift from "@/components/content-sections/Gift";
+import PhotoShare from "@/components/content-sections/PhotoShare";
 
 export default function Invitation() {
   const { envelopeOpen } = useGlobalSettings();
@@ -31,6 +36,11 @@ export default function Invitation() {
       <DressCode />
       <Transport />
       <Lodging />
+      <AttendanceConfirmation />
+      <Itinerary />
+      <Album />
+      <Gift />
+      <PhotoShare />
     </article>
   );
 }

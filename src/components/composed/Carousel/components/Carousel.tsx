@@ -9,10 +9,11 @@ import { NextButton, PrevButton } from "./CarouselArrowButtons";
 interface CarouselProps {
   slides: ReactNode[];
   options?: EmblaOptionsType;
+  withDots?: boolean;
 }
 
 export default function Carousel(props: CarouselProps) {
-  const { slides, options } = props;
+  const { slides, options, withDots = true } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi);
@@ -22,8 +23,8 @@ export default function Carousel(props: CarouselProps) {
 
   return (
     <motion.div
-      initial={{ opacity: 0, translateY: 30 }}
-      whileInView={{ opacity: 1, translateY: 0 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       transition={{ delay: 0.3, duration: 1.5 }}
       viewport={{ once: true }}
       className="embla relative w-full select-none overflow-hidden"
@@ -41,15 +42,19 @@ export default function Carousel(props: CarouselProps) {
       <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
       <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
 
-      <div className="embla__dots">
-        {scrollSnaps.map((_, index) => (
-          <DotButton
-            key={index}
-            onClick={() => onDotButtonClick(index)}
-            className={"embla__dot".concat(index === selectedIndex ? " embla__dot--selected" : "")}
-          />
-        ))}
-      </div>
+      {withDots && (
+        <div className="embla__dots">
+          {scrollSnaps.map((_, index) => (
+            <DotButton
+              key={index}
+              onClick={() => onDotButtonClick(index)}
+              className={"embla__dot".concat(
+                index === selectedIndex ? " embla__dot--selected" : "",
+              )}
+            />
+          ))}
+        </div>
+      )}
     </motion.div>
   );
 }

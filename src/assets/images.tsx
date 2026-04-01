@@ -3,12 +3,19 @@ export default {
   goldRing: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677595/gold-ring_v0xefg.webp",
   flower1: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677590/flower1_f9yguk.webp",
   flower2: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677591/flower2_kliool.webp",
+  flower3: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677592/flower3_j5susz.png",
+  flower4: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677592/flower4_wl3zme.png",
+  flower5: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677593/flower5_p3gilg.webp",
   mapIcon: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677598/map-locator_v0arr0.png",
   mainPhoto:
     "https://res.cloudinary.com/dkflthqdd/image/upload/v1774667342/IMG_20180917_141930_pbduhi.jpg",
   divisorLine:
     "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677585/divisor-line-inverse_uugbgu.png",
   divisorToDark: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677586/divisor_yhttzy.png",
+  divisorLineLight:
+    "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677586/divisor-line_budjoq.png",
+  divisorLineInverse:
+    "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677585/divisor-line-inverse_uugbgu.png",
   ceremonyPlace:
     "https://res.cloudinary.com/dkflthqdd/image/upload/v1774674045/Gemini_Generated_Image_nfzt22nfzt22nfzt_h4jiyd.png",
   celebrationPlace:
@@ -18,4 +25,20 @@ export default {
   arrowLeft: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677581/arrow-left_wy1lab.svg",
   transport: "https://res.cloudinary.com/dkflthqdd/image/upload/v1774676581/ship_m4wgaw.png",
   lodging: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677606/room_wrsk7r.png",
+  loveLetter:
+    "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677596/love-letter_pd4z8n.png",
+  copy: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677584/copy_cmhcus.svg",
+  canopy: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677605/reception_aeyzo6.png",
+  cocktail: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677583/cocktail_mdhior.png",
+  food: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677594/food_n7tocf.png",
+  dance: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677599/party_lkvlcz.png",
+  dress: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677587/dress_fsdxvu.png",
+  tie: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677609/tie_bmie7n.png",
+  gift: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677595/gift_wgazuq.png",
+  camera: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677600/photo-camera-2_mk8qkt.png",
+  timer: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677609/timer_xo563j.png",
+  album1:
+    "https://res.cloudinary.com/dkflthqdd/image/upload/v1775019432/IMG_2770_vnbc6k_m84uqj.jpg",
+  album2:
+    "https://res.cloudinary.com/dkflthqdd/image/upload/v1775019431/portrait_0477_bfw2zp_x7ruxn.jpg",
 };
