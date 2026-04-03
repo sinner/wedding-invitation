@@ -37,6 +37,10 @@ export default {
   gift: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677595/gift_wgazuq.png",
   camera: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677600/photo-camera-2_mk8qkt.png",
   timer: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677609/timer_xo563j.png",
+  soundOn:
+    "https://res.cloudinary.com/dkflthqdd/image/upload/v1775232799/speaker-wave-white_lyxnff.svg",
+  soundOff:
+    "https://res.cloudinary.com/dkflthqdd/image/upload/v1775232842/speaker-x-mark-white_btnpgu.svg",
   album1:
     "https://res.cloudinary.com/dkflthqdd/image/upload/v1775019432/IMG_2770_vnbc6k_m84uqj.jpg",
   album2:

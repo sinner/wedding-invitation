@@ -1,3 +1,4 @@
+import { useEffect, useState, startTransition } from "react";
 import cx from "@/utils/cx";
 import Header from "@/components/content-sections/Header";
 import MainPhoto from "@/components/content-sections/MainPhoto";
@@ -15,9 +16,15 @@ import Album from "@/components/content-sections/Album";
 import Gift from "@/components/content-sections/Gift";
 import PhotoShare from "@/components/content-sections/PhotoShare";
 import SeeYou from "@/components/content-sections/SeeYou";
+import SoundButton from "@/components/unit/SoundButton";
 
 export default function Invitation() {
   const { envelopeOpen } = useGlobalSettings();
+  const [isSoundOn, setIsSoundOn] = useState(false);
+
+  useEffect(() => {
+    if (envelopeOpen) startTransition(() => setIsSoundOn(true));
+  }, [envelopeOpen]);
 
   return (
     <article
@@ -43,6 +50,7 @@ export default function Invitation() {
       <Gift />
       <PhotoShare />
       <SeeYou />
+      <SoundButton isSoundOn={isSoundOn} setIsSoundOn={setIsSoundOn} />
     </article>
   );
 }
