@@ -83,7 +83,9 @@ export default function SeeYou() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.6, type: "spring", bounce: 0.4 }}
             >
-              <ConfettiExplosion />
+              <div className="pointer-events-none absolute inset-0 z-50 flex items-center justify-center">
+                <ConfettiExplosion force={0.8} duration={3000} particleCount={500} width={1980} />
+              </div>
               <p className="text-white text text-lg font-bold tracking-wider animate-celebration-float pt-2">
                 ¡Hoy es el gran día!
               </p>
