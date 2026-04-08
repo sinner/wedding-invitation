@@ -2,13 +2,14 @@ import { motion } from "motion/react";
 import { useState } from "react";
 import images from "@/assets/images";
 
-const IBAN = "ESXX XXXX XXXX XXXX XXXX";
+const IBAN = "ncva2611@gmail.com";
+const BREV = "@BBVSC290";
 
 export default function Gift() {
   const [copied, setCopied] = useState(false);
 
-  const handleCopy = async () => {
-    await navigator.clipboard.writeText(IBAN.replace(/\s/g, ""));
+  const handleCopy = async (type: "zelle" | "brev") => {
+    await navigator.clipboard.writeText(type === "zelle" ? IBAN : BREV);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -40,7 +41,28 @@ export default function Gift() {
           viewport={{ once: true }}
         >
           Nuestro mejor regalo es que estén con nosotros en nuestro día, pero si quieren hacernos un
-          obsequio, ¡aquí está nuestro número de cuenta!
+          obsequio, ¡apoyanos con la luna de miel!
+        </motion.div>
+        <motion.div
+          className="mt-4 px-4"
+          initial={{ opacity: 0, translateY: 30 }}
+          whileInView={{ opacity: 1, translateY: 0, transition: { delay: 0.3, duration: 1.5 } }}
+          viewport={{ once: true }}
+        >
+          <button
+            onClick={() => handleCopy("zelle")}
+            className="text mx-auto flex items-center justify-center gap-2 cursor-pointer transition-opacity active:opacity-60"
+          >
+            <img className="animate-lightpulse" width="24" src={images.copy} alt="copy" />
+            <div>
+              <div className="text-left text-sm font-bold text-[#212121] text">
+                Neida Vasquez (USD by Zelle Transfers)
+              </div>
+              <p id="gift-num-1-1" className="transition-all duration-300">
+                {copied ? "¡Copiado! ✓" : IBAN}
+              </p>
+            </div>
+          </button>
         </motion.div>
         <motion.div
           className="mt-2 px-4"
@@ -49,14 +71,16 @@ export default function Gift() {
           viewport={{ once: true }}
         >
           <button
-            onClick={handleCopy}
+            onClick={() => handleCopy("brev")}
             className="text mx-auto flex items-center justify-center gap-2 cursor-pointer transition-opacity active:opacity-60"
           >
             <img className="animate-lightpulse" width="24" src={images.copy} alt="copy" />
             <div>
-              <div className="text-left text-sm font-bold text-[#212121] text">Neida Vasquez</div>
+              <div className="text-left text-sm font-bold text-[#212121] text">
+                Neida Vasquez (COPs por Bre-V)
+              </div>
               <p id="gift-num-1-1" className="transition-all duration-300">
-                {copied ? "¡Copiado! ✓" : IBAN}
+                {copied ? "¡Copiado! ✓" : BREV}
               </p>
             </div>
           </button>
