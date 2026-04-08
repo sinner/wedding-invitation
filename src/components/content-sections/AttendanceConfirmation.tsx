@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import images from "@/assets/images";
 import cx from "@/utils/cx";
 
-const FORM_URL = "https://forms.gle/your-form-id"; // ← replace with your Google Form URL
+const FORM_URL = "https://forms.gle/9UfFD8H8M8p87Kap9";
 
 export default function AttendanceConfirmation() {
   return (
