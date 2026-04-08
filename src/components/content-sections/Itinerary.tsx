@@ -58,12 +58,12 @@ export default function Itinerary() {
           <div className="relative w-full pb-6">
             <img className="mx-auto" src={images.canopy} alt="ceremony" width="100" />
             <div className="mb-6 px-4 mt-3 tracking-wider">
-              <p className="text-[#212121] text text-base font-bold tracking-wider">18:00 h</p>
+              <p className="text-[#212121] text text-base font-bold tracking-wider">17:00 h</p>
               <p>Ceremonia</p>
             </div>
             <img className="mx-auto" src={images.cocktail} alt="cocktail" width="100" />
             <div className="mb-6 px-4 mt-3 tracking-wider">
-              <p className="text-[#212121] text text-base font-bold tracking-wider">19:30 h</p>
+              <p className="text-[#212121] text text-base font-bold tracking-wider">19:00 h</p>
               <p>Cocktail</p>
             </div>
             <img className="mx-auto" src={images.food} alt="food" width="100" />
