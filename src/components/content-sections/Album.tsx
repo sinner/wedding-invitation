@@ -2,12 +2,12 @@ import { motion } from "motion/react";
 import images from "@/assets/images";
 import Carousel from "@/components/composed/Carousel";
 
-const carouselItems = [
-  <img src={images.album3} alt="main-photo" />,
-  <img src={images.album1} alt="main-photo" />,
-  <img src={images.album2} alt="main-photo" />,
-  <img src={images.album4} alt="main-photo" />,
-];
+const carouselItems = [images.album3, images.album1, images.album2, images.album4].map((src, i) => (
+  <div key={i} className="h-[610px] w-full overflow-hidden">
+    <img src={src} alt={`album-${i + 1}`} className="h-full w-full object-cover object-center" />
+  </div>
+));
+
 
 export default function Transport() {
   return (
