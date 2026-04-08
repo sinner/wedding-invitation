@@ -56,12 +56,15 @@ export default function DressCode() {
           viewport={{ once: true }}
         >
           <div className="break-words px-4 pb-2 text-base font-bold tracking-wider text-[#212121] text">
-            FORMAL
+            COCKTAIL
           </div>
           <div className="text break-words px-4 text-base [&amp;_a]:underline [&amp;_ol]:inline-block [&amp;_ol]:list-decimal [&amp;_ol]:pl-5 [&amp;_ol]:text-start [&amp;_ul]:inline-block [&amp;_ul]:list-disc [&amp;_ul]:pl-5 [&amp;_ul]:text-start">
-            El blanco está reservado para la novia,
-            <br />
-            ¡nos encantará verte en otros colores!
+            <span className="font-bold">Mujeres:</span> Vestidos largos, colores claros. El blanco
+            está reservado para la novia
+          </div>
+          <div className="text break-words pt-2 px-4 text-base [&amp;_a]:underline [&amp;_ol]:inline-block [&amp;_ol]:list-decimal [&amp;_ol]:pl-5 [&amp;_ol]:text-start [&amp;_ul]:inline-block [&amp;_ul]:list-disc [&amp;_ul]:pl-5 [&amp;_ul]:text-start">
+            <span className="font-bold">Hombres:</span> Guayabera formal o lino, colores claros. El
+            verde está reservado para el novio.
           </div>
           <div className="mx-auto flex items-center justify-center gap-0.5 py-4">
             <img src={images.tie} alt="dc1-1" className="icon h-20 w-20 object-contain " />

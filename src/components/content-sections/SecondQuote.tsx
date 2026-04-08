@@ -13,7 +13,8 @@ export default function SecondQuote() {
           whileInView={{ opacity: 1, translateY: 0 }}
           transition={{ delay: 0.3, duration: 1.5, ease: "easeOut" }}
         >
-          Queremos que sean testigos de nuestro amor acompañándonos en este día tan especial
+          Estaremos encantados de contar con tu presencia a nuestro lado en esta fecha tan
+          importante
         </motion.div>
       </div>
       <div className="relative overflow-visible -top-0.5">

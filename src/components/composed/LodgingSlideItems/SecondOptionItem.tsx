@@ -2,14 +2,14 @@ import images from "@/assets/images";
 import { useState } from "react";
 import MapModal from "../MapModal";
 
-const LOCATION = { lat: 10.37139, lng: -75.56648 };
+const LOCATION = { lat: 10.395149104882677, lng: -75.5621409060814 };
 
-export default function RecommendedOptionItem() {
+export default function SecondOptionItem() {
   const [mapOpen, setMapOpen] = useState(false);
 
   return (
     <>
-      <div key="recommended-option" className="embla-carousel__slide py-3 text group w-full">
+      <div key="second-option" className="embla-carousel__slide py-3 text group w-full">
         <p className="text-center text-base font-bold tracking-wider text-[#212121] text">
           Otro Hotel
         </p>
@@ -30,11 +30,19 @@ export default function RecommendedOptionItem() {
       <MapModal
         isOpen={mapOpen}
         onClose={() => setMapOpen(false)}
-        title="Vuelta desde el Hotel Palmarito Beach"
+        title="Otros hoteles cercanos"
         location={LOCATION}
         placeName="Hotel Palmarito Beach"
         description="Isla de Tierra Bomba, Playa Dorada, Cartagena de Indias, Colombia"
-      />
+      >
+        <div className="quattrocento-text mb-3 rounded-xl border border-[#e8e0d8] bg-[#faf8f5] px-4 py-3 text-[#212121]">
+          {/* Mensaje sugerido */}
+          <div className="mt-3 flex flex-col gap-0.5">
+            Te recomendamos también revisar las opciones de alojamiento en la zona de El Laguito,
+            cercanos a la Isla de Tierra Bomba.
+          </div>
+        </div>
+      </MapModal>
     </>
   );
 }

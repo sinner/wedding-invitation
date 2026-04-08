@@ -57,7 +57,7 @@ export default function Place() {
         whileInView={{ opacity: 1, transition: { delay: 0.3, duration: 1.5 } }}
         viewport={{ amount: 0.8, once: true }}
       >
-        18:00 h
+        17:00 h
       </motion.p>
       <motion.button
         className={`mx-auto flex flex-col items-center justify-center gap-3 cursor-pointer`}

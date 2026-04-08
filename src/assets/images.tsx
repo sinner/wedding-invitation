@@ -8,7 +8,7 @@ export default {
   flower5: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677593/flower5_p3gilg.webp",
   mapIcon: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677598/map-locator_v0arr0.png",
   mainPhoto:
-    "https://res.cloudinary.com/dkflthqdd/image/upload/v1774667342/IMG_20180917_141930_pbduhi.jpg",
+    "https://res.cloudinary.com/dkflthqdd/image/upload/v1775606707/FD740ECB-0DB3-404E-8492-E3EB14B89A46_zrrmw6.jpg",
   divisorLine:
     "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677585/divisor-line-inverse_uugbgu.png",
   divisorToDark: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677586/divisor_yhttzy.png",
@@ -17,9 +17,9 @@ export default {
   divisorLineInverse:
     "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677585/divisor-line-inverse_uugbgu.png",
   ceremonyPlace:
-    "https://res.cloudinary.com/dkflthqdd/image/upload/v1774674045/Gemini_Generated_Image_nfzt22nfzt22nfzt_h4jiyd.png",
+    "https://res.cloudinary.com/dkflthqdd/image/upload/v1775614008/Image_20260407_210506_mrptep.jpg",
   celebrationPlace:
-    "https://res.cloudinary.com/dkflthqdd/image/upload/v1774667724/Place_tw4nqp.jpg",
+    "https://res.cloudinary.com/dkflthqdd/image/upload/v1774674045/Gemini_Generated_Image_nfzt22nfzt22nfzt_h4jiyd.png",
   arrowRight:
     "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677582/arrow-right_cokw1d.svg",
   arrowLeft: "https://res.cloudinary.com/dkflthqdd/image/upload/v1772677581/arrow-left_wy1lab.svg",
@@ -45,4 +45,8 @@ export default {
     "https://res.cloudinary.com/dkflthqdd/image/upload/v1775019432/IMG_2770_vnbc6k_m84uqj.jpg",
   album2:
     "https://res.cloudinary.com/dkflthqdd/image/upload/v1775019431/portrait_0477_bfw2zp_x7ruxn.jpg",
+  album3:
+    "https://res.cloudinary.com/dkflthqdd/image/upload/v1775611451/d8baff7c-e0ed-476e-b242-605f467bdedc_ldrlrj-portrait_b123b3.jpg",
+  album4:
+    "https://res.cloudinary.com/dkflthqdd/image/upload/v1775606708/B14B40E0-1C45-4C66-94EC-32D913AF1652_chn7c8.jpg",
 };

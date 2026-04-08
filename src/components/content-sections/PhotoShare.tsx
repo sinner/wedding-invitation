@@ -57,7 +57,7 @@ export default function PhotoShare() {
           <button className="text mx-auto flex items-center justify-center">
             <img className="animate-lightpulse" width="24" src={images.copy} alt="copy" />
             <span id="qr-1" className="ml-2">
-              BODA-N&amp;J25
+              BODA-N&amp;V26
             </span>
           </button>
         </motion.div>

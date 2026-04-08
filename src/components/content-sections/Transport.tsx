@@ -1,10 +1,10 @@
 import { motion } from "motion/react";
 import images from "@/assets/images";
-import Carousel from "@/components/composed/Carousel";
-import GoItem from "@/components/composed/TransportSlideItems/GoItem";
-import ComebackItem from "@/components/composed/TransportSlideItems/ComebackItem";
+// import Carousel from "@/components/composed/Carousel";
+// import GoItem from "@/components/composed/TransportSlideItems/GoItem";
+// import ComebackItem from "@/components/composed/TransportSlideItems/ComebackItem";
 
-const carouselItems = [<GoItem />, <ComebackItem />];
+// const carouselItems = [<GoItem />, <ComebackItem />];
 
 export default function Transport() {
   return (
@@ -27,7 +27,7 @@ export default function Transport() {
         >
           <div className="text px-4 text-base">
             Si decides no quedarte a dormir en el Hotel Palmarito Beach, para facilitar el traslado
-            pondremos a vuestra disposición el siguiente servicio de lancha:
+            pondremos a disposición un servicio de lancha.
           </div>
         </motion.div>
         <motion.div
@@ -36,7 +36,7 @@ export default function Transport() {
           whileInView={{ opacity: 1, transition: { delay: 0.3, duration: 1.5 } }}
           viewport={{ amount: 0.8, once: true }}
         >
-          <Carousel slides={carouselItems} options={{ loop: true }} />
+          {/* <Carousel slides={carouselItems} options={{ loop: true }} /> */}
         </motion.div>
       </div>
       <div className="relative overflow-visible -top-0.5">

@@ -23,7 +23,10 @@ export default function FirstQuote() {
         viewport={{ once: true, amount: 0.5 }}
         whileInView={{ opacity: 1, transition: { delay: 0.3, duration: 1.5 }, translateY: 0 }}
       >
-        Todos los días pueden ser el comienzo de algo nuevo
+        Qué es nuestro amor?
+        <br />
+        Es la alegría presente en cada aventura, en cada risa y en cada mañana que despertamos
+        juntos.
       </motion.div>
     </div>
   );
